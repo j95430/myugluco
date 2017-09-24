@@ -10,57 +10,264 @@
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="first-slide" src="ss1.png">
-                    <div class="container">
-                      <div class="carousel-caption d-none d-md-block text-left">
-                        <!--<h1>,,</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-                    <div class="container">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-                    <div class="container">
-                      <div class="carousel-caption d-none d-md-block text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                      </div>
-                    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">健康好給利</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">關於我們 <span class="sr-only">(current)</span></a>
+                </li>
+                  <a class="nav-link" href="#">服務項目 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">APP常見問題</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">脈搏帶常見問題</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+       <!-- START THE FEATURETTES -->
+
+       <div class="container">
+          <hr class="featurette-divider">
+          
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading">為甚麼手機App一直無法抓到我的手環</a></h2>
+                        <ul style="font-size:20px">
+                          <li >當遇到藍芽連線問題時，請重啟手機藍芽功能再重新配對。iOS若遇到設定->藍芽->閃退，則建議從下方滑出藍芽按鈕，重新開啟藍芽功能。</li>
+                          <li>請檢視手機藍芽搜尋功能(設定->藍芽)，看看是否可搜尋到”其他可用的裝置”，如果不行，請重新開機。有時候手機的藍芽功能會有問題，重新開機即可解決。</li>
+                          <li> 若重啟藍芽也無法解決配對問題，請長按功能鍵5秒重新設定手環。<span style="color:#4FB8AE">注意：重新設定後，手環的紀錄將會被清除。</span></li>
+                          <li>請勿從設定->藍芽->裝置搜尋處嘗試連接手環(直接在app內連線即可)</li>
+                          <li>請勿同時使用Holux App，會干擾藍芽連線。</li>
+                      </ul>
+                    </p>
+                   </div>
+                </div>
+          
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term2">手環當機怎麼辦</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >請長按功能鍵5秒重新設定(reset)手環。</li>
+                       <li>重新設定後手環的當日紀錄會被清除。</li>
+                   </ul>
+                  </p>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-  </body>          
+                
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term3">手環為什麼會一直震動</a></h2>
+                    <h3><span class="featurette-heading" style="font-size:20px;color:#4FB8AE">( FW.41取消振動功能，僅會在手環上顯示連線符號 )</span></h3>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >當靠近手機時，此款手環會自動以藍芽連線App，藍芽連線成功或斷線都會以震動方式提示使用者。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">手環是否防水</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >否，請勿從事以下活動，若碰到水請盡快擦拭乾淨。</li>
+                       <li>請勿將產品浸泡入水裡或在水裡使用本產品。</li>
+                       <li>請勿佩戴本產品進行淋浴或三溫暖，避免影響或損壞防水功能。</li>
+                       <li>請勿直接開啟水龍頭沖洗本產品，避免影響或損壞防水功能，</li>
+                   </ul>
+             
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">過敏反應</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >此款手環採用道康寧抗過敏材質(TPSIV 3345-64A)，但仍極少數使用者反映有過敏現象。</li>
+                       <li>若目前您有過敏現象，建議不要帶太緊，以免不透氣、汗氣累積，容易藏汙納垢，若有接觸汗水、水、清潔液體等，請盡快移除擦拭乾淨，再戴上，另外，請問你以前戴一般手錶，也會容易有過敏的現象嗎?怕是錶帶吸附汗漬、汙垢，也會造成皮膚敏感。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">驗證結束後，我可以保留手環</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >可以的，但是若您參加活動未滿1個月即通知服務團隊要退出實驗則需歸還健康手環。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+               
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">手環沒電後，重新充電啟動手環資料是否會保留</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >請在6小時內重新充電同步資料，沒電後資料會暫存在快閃記憶體，充電後重新開啟，記錄會顯示正確的數字。</li>
+                     </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4"> 為什麼手環沒電後，過幾天重新充電後日期又跑掉了</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >當手環沒電超過6小時後，重新充電的時間和沒電的時間日期不一致，時間就會不正確，需要APP再去重新校準。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4"> 為什麼手環沒電後，重新充電，剛剛累積的步數會歸零</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li ><span style="color:#4FB8AE">注意</span>：如果沒電的時間和你充電的時間是不同天的話，重新校準時間後，會當作另外一天開始，步數就會被歸零。</li>
+                       </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">睡眠時間計算規則</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >  睡眠記錄只會記錄當日睡眠時間最長的一筆。</li>
+                       <li>此款手環以g sensor計算睡眠時間，可能會因為睡眠中斷(例如，起床上廁所而干擾計算方式)。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">心率計算方式</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >此款手環以光學心率感測器偵測心跳，為了達到良好的偵測品質，請在運動前靜止狀態時就先啟動心率量測功能，待手環抓到心跳後再運動。這樣測到的心率較準確。</li>
+                       <li>若配戴方式太鬆，也會影響測得的準確度。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term4">手環電力續航力</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >當充飽電時，手環在不量測心率的情況下，電力至少可持續72小時。</li>
+                       <li>  當充飽電時，開啟心率量測功能，手環電力至少可持續10小時。</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term5">如何查詢我的手機作業系統版本</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >Android手機：設定->關於手機->顯示android版本號(本活動支援4.3以上)</li>
+                       <li>iPhone手機：設定->一般->關於本機->iOS版本號(支援活動<span style="color:#4FB8AE">8</span>以上)</li>
+                   </ul>
+                  </p>
+                  </div>
+                </div>
+   
+   
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><a id="term7">我可以今天上傳昨日的步數，累積點數嗎</a></h2>
+                    <p class="lead">
+                     <ul style="font-size:20px">
+                       <li >很抱歉，與App積點功能相關的手環記錄，僅限當日有效。舉例來說，若您今天更新昨日的步數到7800步(超過7500步可累積點數)，則仍無法獲得點數。</li>
+                       </ul>
+                  </p>
+                  </div>
+                </div>
+            
+             <p align="center"> <a href="index.html" class="btn btn-outline-info" >回上頁</a></p>
+       </div>
+       
+             <!--<hr class="featurette-divider">
+       
+             <div class="row featurette">
+               <div class="col-md-7">
+                 <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+               </div>
+               <div class="col-md-5">
+                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+               </div>
+             </div>
+       
+             <hr class="featurette-divider">-->
+       
+             <!-- /END THE FEATURETTES -->
+       
+       
+             <!-- FOOTER -->
+             <!--<footer>
+               <p class="float-right"><a href="#">Back to top</a></p>
+               <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+             </footer>
+            -->
+           </div><!-- /.container -->
+       
+       
+           <!-- Bootstrap core JavaScript
+           ================================================== -->
+           <!-- Placed at the end of the document so the pages load faster -->
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+           <script src="assets/js/vendor/popper.min.js"></script>
+           <script src="dist/js/bootstrap.min.js"></script>
+           <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+           <script src="assets/js/vendor/holder.min.js"></script>
+           <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+           <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+         </body>
+       </html>
+       
+  </body>
+</html>
